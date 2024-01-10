@@ -55,5 +55,3 @@
 Todos os testes foram realizados com sucesso para inserção, exclusão e atualização de usuários.
 
 ---
-
-O desenvolvimento está concluído. Para detalhes sobre a implementação, consulte os diretórios e códigos-fonte nos links dos projetos disponíveis acima.

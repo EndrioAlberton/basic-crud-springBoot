@@ -10,10 +10,12 @@ import org.springframework.context.annotation.Profile;
 
 import com.javapb.startspringboot.entities.Category;
 import com.javapb.startspringboot.entities.Order;
+import com.javapb.startspringboot.entities.Product;
 import com.javapb.startspringboot.entities.User;
 import com.javapb.startspringboot.entities.enums.OrderStatus;
 import com.javapb.startspringboot.repositories.CategoryRepository;
 import com.javapb.startspringboot.repositories.OrderRepository;
+import com.javapb.startspringboot.repositories.ProductRepository;
 import com.javapb.startspringboot.repositories.UserRepository;
 
 @Configuration
@@ -29,14 +31,24 @@ public class TestConfig implements CommandLineRunner{
 	@Autowired
 	private CategoryRepository categoryRepository;
 
+	@Autowired
+	private ProductRepository productRepository;
+	
 	@Override
 	public void run(String... args) throws Exception {
 		
 		Category cat1 = new Category(null, "Eletronicos");
 		Category cat2 = new Category(null, "Livros");
 		Category cat3 = new Category(null, "Computadores");
+		
+		Product p1 = new Product(null, "O Senhor dos Anéis", "Uma aventura épica em uma terra de fantasia.", 90.5, "");
+		Product p2 = new Product(null, "Smart TV", "Experiência imersiva de entretenimento em alta definição.", 2190.0, "");
+		Product p3 = new Product(null, "Macbook Pro", "Potência e elegância para suas necessidades profissionais.", 1250.0, "");
+		Product p4 = new Product(null, "PC Gamer", "Desempenho excepcional para os melhores jogos.", 1200.0, "");
+		Product p5 = new Product(null, "Rails para Iniciantes", "Um guia passo a passo para aprender desenvolvimento web.", 100.99, ""); 
 
 		categoryRepository.saveAll(Arrays.asList(cat1,cat2,cat3));
+		productRepository.saveAll(Arrays.asList(p1,p2,p3,p4, p5));
 
 		User u1 = new User(null, "Justin", "justin@gmail.com", "988888888", "123456");
 		User u2 = new User(null, "Eduardo", "edu@gmail.com", "977777777", "123456"); 

@@ -14,9 +14,9 @@
 
 ### Spring Initializr
 
-- Configurações Maven
+- Maven
 - Java 17
-- Empacotamento JAR
+- Packing JAR
 - Dependências: Spring Web
 
 ### Banco de Dados H2, perfil de teste e JPA
@@ -53,5 +53,21 @@
 ## Testes
 
 Todos os testes foram realizados com sucesso para inserção, exclusão e atualização de usuários.
+
+# Como executar o projeto
+
+## Back end
+Pré-requisitos: Java 11
+
+```bash
+# clonar repositório
+git clone ttps://github.com/EndrioAlberton/basic-crud-springBoot
+
+# entrar na pasta do projeto
+cd basic-crud-springBoot
+
+# executar o projeto
+./mvnw spring-boot:run
+```
 
 ---

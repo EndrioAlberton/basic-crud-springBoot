@@ -1,4 +1,4 @@
-# Workshop Spring Boot 2 com JPA/Hibernate
+u# Workshop Spring Boot 2 com JPA/Hibernate
 
 ## Objetivos
 
@@ -43,12 +43,15 @@
 - Checklist para relacionamento muitos-para-muitos com atributos extras
 - Associação Produto-OrderItem um-para-muitos
 
-### Pagamento, Associação Um-para-Um
+### Recursos criados
 
 - Métodos de subtotal e total
 - Inserção de Usuário
 - Exclusão e Atualização de Usuário
 - Manipulação de Exceções
+
+## Modelo conceitual
+![Modelo Conceitual](https://raw.githubusercontent.com/EndrioAlberton/assets/main/basic-crud-springboot/domain%20model%20-%20basic%20crud%20spring%20boot.png)
 
 ## Testes
 
@@ -56,7 +59,7 @@ Todos os testes foram realizados com sucesso para inserção, exclusão e atuali
 
 # Como executar o projeto
 
-## Back end
+## Executar projeto
 Pré-requisitos: Java 11
 
 ```bash
